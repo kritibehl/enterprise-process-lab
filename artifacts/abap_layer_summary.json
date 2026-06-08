@@ -1,0 +1,12 @@
+{
+  "abap_layer": "abap_layer/z_epo_readiness_check.abap",
+  "purpose": "SAP-style purchase-order readiness validation",
+  "signals": [
+    "ABAP report structure",
+    "internal table processing",
+    "purchase order workflow validation",
+    "inventory and shipment exception handling",
+    "go-live readiness blocking logic"
+  ],
+  "positioning": "Vendor-neutral enterprise application project with SAP-style implementation layer"
+}
