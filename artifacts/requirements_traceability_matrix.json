@@ -1,0 +1,26 @@
+[
+  {
+    "business_requirement": "Track purchase order approval status",
+    "technical_implementation": "workflow_status_engine",
+    "test_case": "test_purchase_order_status_tracking",
+    "validation_status": "PASS"
+  },
+  {
+    "business_requirement": "Detect delayed shipments",
+    "technical_implementation": "shipment_exception_detector",
+    "test_case": "test_shipment_delay_exception",
+    "validation_status": "PASS"
+  },
+  {
+    "business_requirement": "Block readiness when inventory validation fails",
+    "technical_implementation": "readiness_gate",
+    "test_case": "test_failed_validation_blocks_release",
+    "validation_status": "PASS"
+  },
+  {
+    "business_requirement": "Measure process SLA adherence",
+    "technical_implementation": "process_analytics",
+    "test_case": "test_sla_adherence_metric",
+    "validation_status": "PASS"
+  }
+]

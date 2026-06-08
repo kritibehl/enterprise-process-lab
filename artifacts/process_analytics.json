@@ -1,0 +1,6 @@
+{
+  "cycle_time_days_avg": 3.88,
+  "exception_rate": 0.4,
+  "throughput": 5,
+  "sla_adherence": 0.6
+}

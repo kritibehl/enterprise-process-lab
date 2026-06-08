@@ -1,0 +1,8 @@
+{
+  "change_requests": 12,
+  "approved": 8,
+  "blocked": 2,
+  "rollback_required": 1,
+  "pending_business_signoff": 1,
+  "governance_decision": "requires_review"
+}

@@ -1,0 +1,7 @@
+{
+  "approved": 2,
+  "blocked": 1,
+  "in_testing": 1,
+  "failed_validation": 1,
+  "release_decision": "blocked"
+}

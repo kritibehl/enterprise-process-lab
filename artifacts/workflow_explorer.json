@@ -1,0 +1,57 @@
+[
+  {
+    "process_id": "PRC-1001",
+    "purchase_order": "PO-9001",
+    "vendor": "Acme Components",
+    "inventory_status": "available",
+    "shipment_status": "delivered",
+    "approval_status": "approved",
+    "exception_type": null,
+    "cycle_time_days": 2.4,
+    "sla_met": true
+  },
+  {
+    "process_id": "PRC-1002",
+    "purchase_order": "PO-9002",
+    "vendor": "Nova Parts",
+    "inventory_status": "low_stock",
+    "shipment_status": "delayed",
+    "approval_status": "blocked",
+    "exception_type": "shipment_delay",
+    "cycle_time_days": 5.8,
+    "sla_met": false
+  },
+  {
+    "process_id": "PRC-1003",
+    "purchase_order": "PO-9003",
+    "vendor": "Global Freight",
+    "inventory_status": "available",
+    "shipment_status": "in_transit",
+    "approval_status": "in_testing",
+    "exception_type": null,
+    "cycle_time_days": 3.1,
+    "sla_met": true
+  },
+  {
+    "process_id": "PRC-1004",
+    "purchase_order": "PO-9004",
+    "vendor": "Vertex Supply",
+    "inventory_status": "stockout",
+    "shipment_status": "pending",
+    "approval_status": "failed_validation",
+    "exception_type": "inventory_mismatch",
+    "cycle_time_days": 6.2,
+    "sla_met": false
+  },
+  {
+    "process_id": "PRC-1005",
+    "purchase_order": "PO-9005",
+    "vendor": "Orion Vendors",
+    "inventory_status": "available",
+    "shipment_status": "delivered",
+    "approval_status": "approved",
+    "exception_type": null,
+    "cycle_time_days": 1.9,
+    "sla_met": true
+  }
+]
