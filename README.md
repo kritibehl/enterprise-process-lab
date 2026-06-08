@@ -6,6 +6,32 @@ Enterprise Process Lab is an enterprise applications and business-systems engine
 
 
 
+
+## Role-Based Access and Controls Compliance
+
+The repo includes a controls-compliance layer for SAP-style procurement and ERP integration workflows:
+
+    controls_compliance/
+
+It models:
+
+- Role access matrix
+- Segregation-of-duties rules
+- Approval policy
+- Audit log samples
+- Release-blocking controls governance
+
+Example controls decision:
+
+    {
+      "sod_violations": 2,
+      "failed_audit_events": 1,
+      "release_decision": "block_release"
+    }
+
+This demonstrates that controls compliance can be enforced, monitored, and tied directly to go-live readiness decisions.
+
+
 ## Public Dashboard
 
 The repo includes a static public dashboard:
