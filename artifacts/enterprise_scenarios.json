@@ -1,0 +1,38 @@
+[
+  {
+    "scenario_id": "SCN-001",
+    "name": "Shipment delay during procurement cutover",
+    "affected_process": "logistics_execution",
+    "severity": "high",
+    "business_impact": "Delayed fulfillment and missed SLA risk",
+    "recommended_action": "Block go-live until shipment exception workflow is validated",
+    "readiness_decision": "block"
+  },
+  {
+    "scenario_id": "SCN-002",
+    "name": "Inventory mismatch before purchase order approval",
+    "affected_process": "inventory_validation",
+    "severity": "critical",
+    "business_impact": "Incorrect stock availability may trigger failed customer commitments",
+    "recommended_action": "Require inventory reconciliation and business signoff",
+    "readiness_decision": "block"
+  },
+  {
+    "scenario_id": "SCN-003",
+    "name": "Vendor master data incomplete",
+    "affected_process": "supplier_management",
+    "severity": "medium",
+    "business_impact": "Purchase order routing may fail for incomplete supplier records",
+    "recommended_action": "Send to data quality remediation queue",
+    "readiness_decision": "review"
+  },
+  {
+    "scenario_id": "SCN-004",
+    "name": "All validation checks passed for standard procurement flow",
+    "affected_process": "procurement",
+    "severity": "low",
+    "business_impact": "No major implementation risk detected",
+    "recommended_action": "Approve workflow for release candidate",
+    "readiness_decision": "approve"
+  }
+]
