@@ -1,0 +1,43 @@
+{
+  "business_object": "Purchase Order",
+  "status": "approved",
+  "integrations_validated": 4,
+  "total_integrations": 4,
+  "systems": [
+    "SAP S/4HANA",
+    "Oracle Finance",
+    "ServiceNow",
+    "Workday"
+  ],
+  "executive_decision": "DO_NOT_RELEASE",
+  "flow": [
+    {
+      "system": "SAP S/4HANA",
+      "business_object": "Purchase Order",
+      "action": "create_purchase_order",
+      "status": "approved",
+      "validation": "purchase_order_id, vendor_id, and approval_status present"
+    },
+    {
+      "system": "Oracle Finance",
+      "business_object": "Invoice",
+      "action": "reconcile_purchase_order",
+      "status": "validated",
+      "validation": "invoice amount reconciled against approved PO"
+    },
+    {
+      "system": "ServiceNow",
+      "business_object": "Change Ticket",
+      "action": "create_go_live_change",
+      "status": "approved",
+      "validation": "rollback plan and business impact present"
+    },
+    {
+      "system": "Workday",
+      "business_object": "Employee Approval",
+      "action": "manager_approval",
+      "status": "approved",
+      "validation": "manager approval limit authorizes transaction"
+    }
+  ]
+}

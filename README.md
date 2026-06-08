@@ -5,6 +5,34 @@
 Enterprise Process Lab is an enterprise applications and business-systems engineering project that simulates ERP-style implementation workflows across supply chain, requirements traceability, readiness governance, process analytics, and change management.
 
 
+
+## Public Dashboard
+
+The repo includes a static public dashboard:
+
+    public_dashboard/index.html
+
+Dashboard metrics:
+
+- Readiness Score: 84
+- Approved: 7
+- Blocked: 3
+- Review: 2
+- Executive Decision: DO_NOT_RELEASE
+
+It also visualizes one enterprise integration scenario:
+
+    SAP Purchase Order → Oracle Finance → ServiceNow Change Ticket → Workday Approval
+
+Example output:
+
+    {
+      "business_object": "Purchase Order",
+      "status": "approved",
+      "integrations_validated": 4
+    }
+
+
 ## Visual Walkthrough
 
 ### SAP-Style Process Flow

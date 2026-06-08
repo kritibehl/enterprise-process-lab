@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Enterprise Process Lab Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; color: #0f172a; }
+    header { padding: 32px; background: #0f172a; color: white; }
+    main { padding: 28px; max-width: 1100px; margin: auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; }
+    .card { background: white; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; box-shadow: 0 1px 3px rgba(15,23,42,.08); }
+    .metric { font-size: 38px; font-weight: 700; margin-top: 10px; }
+    .danger { color: #b91c1c; }
+    .ok { color: #047857; }
+    .warn { color: #b45309; }
+    .flow { margin-top: 28px; }
+    .step { display: flex; align-items: center; gap: 12px; margin: 12px 0; }
+    .pill { background: #e2e8f0; padding: 10px 14px; border-radius: 999px; font-weight: 600; }
+    .arrow { color: #64748b; font-size: 24px; }
+    pre { background: #0f172a; color: #e2e8f0; padding: 18px; border-radius: 12px; overflow: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Enterprise Process Lab</h1>
+    <p>ERP-style readiness, integration mapping, ABAP validation, and executive go-live governance.</p>
+  </header>
+
+  <main>
+    <section class="grid">
+      <div class="card">
+        <h3>Readiness Score</h3>
+        <div class="metric warn">84</div>
+      </div>
+      <div class="card">
+        <h3>Approved</h3>
+        <div class="metric ok">7</div>
+      </div>
+      <div class="card">
+        <h3>Blocked</h3>
+        <div class="metric danger">3</div>
+      </div>
+      <div class="card">
+        <h3>Review</h3>
+        <div class="metric warn">2</div>
+      </div>
+      <div class="card">
+        <h3>Executive Decision</h3>
+        <div class="metric danger">DO_NOT_RELEASE</div>
+      </div>
+    </section>
+
+    <section class="card flow">
+      <h2>Enterprise Integration Scenario</h2>
+      <p>SAP Purchase Order → Oracle Finance → ServiceNow Change Ticket → Workday Approval</p>
+
+      <div class="step">
+        <span class="pill">SAP Purchase Order</span>
+        <span class="arrow">→</span>
+        <span class="pill">Oracle Finance</span>
+        <span class="arrow">→</span>
+        <span class="pill">ServiceNow Change Ticket</span>
+        <span class="arrow">→</span>
+        <span class="pill">Workday Approval</span>
+      </div>
+
+      <pre>{
+  "business_object": "Purchase Order",
+  "status": "approved",
+  "integrations_validated": 4,
+  "executive_decision": "DO_NOT_RELEASE"
+}</pre>
+    </section>
+
+    <section class="card flow">
+      <h2>Implementation Lifecycle</h2>
+      <p>Analyze → Design → Build → Test → Implement → Support</p>
+    </section>
+  </main>
+</body>
+</html>
