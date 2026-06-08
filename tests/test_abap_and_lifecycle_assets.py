@@ -20,7 +20,7 @@ def test_abap_reports_exist_and_have_sap_patterns():
         assert "BLOCK:" in text
 
 
-def test_lifecycle_docs_cover_google_implementation_language:
+def test_lifecycle_docs_cover_google_implementation_language():
     for phase in ["analyze", "design", "build", "test", "implement", "support"]:
         path = Path(f"implementation_lifecycle/{phase}.md")
         assert path.exists()
