@@ -4,6 +4,30 @@
 
 Enterprise Process Lab is an enterprise applications and business-systems engineering project that simulates ERP-style implementation workflows across supply chain, requirements traceability, readiness governance, process analytics, and change management.
 
+
+## Visual Walkthrough
+
+### SAP-Style Process Flow
+
+![SAP-style process flow](assets/screenshots/process_flow.svg)
+
+### Implementation Readiness Dashboard
+
+![Readiness dashboard](assets/screenshots/readiness_dashboard.svg)
+
+### Requirements Traceability Matrix
+
+![Traceability matrix](assets/screenshots/traceability_matrix.svg)
+
+### ABAP Report Output
+
+![ABAP report output](assets/screenshots/abap_report_output.svg)
+
+### Executive Governance Summary
+
+![Executive summary](assets/screenshots/executive_summary.svg)
+
+
 ## Core Capabilities
 
 - Supply Chain Workflow Explorer
