@@ -1,0 +1,18 @@
+[
+  {
+    "source_system": "Workday",
+    "target_system": "Enterprise Approval Workflow",
+    "business_object": "Employee Approval",
+    "data_contract": [
+      "employee_id",
+      "manager_id",
+      "approval_limit",
+      "approval_status"
+    ],
+    "validation_rule": "manager_id must exist and approval_limit must authorize transaction",
+    "failure_mode": "Approval routing failure",
+    "owner": "HR Systems",
+    "test_case": "test_employee_approval_routing",
+    "implementation_status": "validated"
+  }
+]

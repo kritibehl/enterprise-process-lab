@@ -1,0 +1,34 @@
+[
+  {
+    "source_system": "ServiceNow",
+    "target_system": "Implementation Governance Board",
+    "business_object": "Change Request",
+    "data_contract": [
+      "change_id",
+      "risk_level",
+      "approval_status",
+      "rollback_plan"
+    ],
+    "validation_rule": "high-risk changes require approval and rollback plan",
+    "failure_mode": "Change blocked due to missing rollback plan",
+    "owner": "ITSM Governance",
+    "test_case": "test_change_request_governance_gate",
+    "implementation_status": "validated"
+  },
+  {
+    "source_system": "ServiceNow",
+    "target_system": "Support Operations",
+    "business_object": "Service Ticket",
+    "data_contract": [
+      "ticket_id",
+      "priority",
+      "assignment_group",
+      "sla_status"
+    ],
+    "validation_rule": "critical tickets must have assignment group and SLA status",
+    "failure_mode": "SLA escalation due to unassigned ticket",
+    "owner": "Support Operations",
+    "test_case": "test_service_ticket_sla_validation",
+    "implementation_status": "in_testing"
+  }
+]

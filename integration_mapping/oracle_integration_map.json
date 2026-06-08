@@ -1,0 +1,34 @@
+[
+  {
+    "source_system": "Oracle ERP Cloud",
+    "target_system": "Enterprise Process Lab",
+    "business_object": "Invoice",
+    "data_contract": [
+      "invoice_id",
+      "purchase_order_id",
+      "amount",
+      "payment_status"
+    ],
+    "validation_rule": "invoice amount must match approved purchase order amount",
+    "failure_mode": "Invoice reconciliation exception",
+    "owner": "Finance Systems",
+    "test_case": "test_invoice_po_reconciliation",
+    "implementation_status": "in_testing"
+  },
+  {
+    "source_system": "Oracle SCM",
+    "target_system": "Logistics Event Stream",
+    "business_object": "Shipment Event",
+    "data_contract": [
+      "shipment_id",
+      "carrier",
+      "status",
+      "expected_delivery_date"
+    ],
+    "validation_rule": "delayed shipments must trigger readiness review",
+    "failure_mode": "SLA breach from delayed carrier event",
+    "owner": "Logistics Systems",
+    "test_case": "test_shipment_delay_readiness_review",
+    "implementation_status": "validated"
+  }
+]

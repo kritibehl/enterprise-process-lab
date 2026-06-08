@@ -1,0 +1,34 @@
+[
+  {
+    "source_system": "SAP S/4HANA",
+    "target_system": "Enterprise Process Lab",
+    "business_object": "Purchase Order",
+    "data_contract": [
+      "purchase_order_id",
+      "vendor_id",
+      "approval_status",
+      "net_value"
+    ],
+    "validation_rule": "purchase_order_id and vendor_id must be present before approval",
+    "failure_mode": "PO approval blocked due to missing supplier master data",
+    "owner": "Procurement Systems",
+    "test_case": "test_purchase_order_contract_validation",
+    "implementation_status": "validated"
+  },
+  {
+    "source_system": "SAP S/4HANA",
+    "target_system": "Warehouse Management",
+    "business_object": "Inventory Item",
+    "data_contract": [
+      "sku",
+      "plant",
+      "available_quantity",
+      "reorder_threshold"
+    ],
+    "validation_rule": "available_quantity must be greater than reorder_threshold for release readiness",
+    "failure_mode": "Go-live blocked due to inventory mismatch",
+    "owner": "Supply Chain Systems",
+    "test_case": "test_inventory_readiness_validation",
+    "implementation_status": "validated"
+  }
+]
