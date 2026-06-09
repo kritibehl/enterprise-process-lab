@@ -1,20 +1,24 @@
-# Enterprise Process Lab Report
+# Enterprise Process Report
 
-## Implementation Readiness
+## Latest Project Output
 
-- Approved: 2
-- Blocked: 1
-- In testing: 1
-- Failed validation: 1
-- Release decision: `blocked`
+```json
+{
+  "integrations_validated": 4,
+  "tests_passed": 24,
+  "compliance_controls": 5,
+  "executive_decision": "DO_NOT_RELEASE",
+  "sod_violations": 2,
+  "failed_audit_events": 1
+}
+Integration Flow
 
-## Process Analytics
+SAP Purchase Order → Oracle Finance → ServiceNow Change Ticket → Workday Approval
 
-- Average cycle time: 3.88 days
-- Exception rate: 0.4
-- Throughput: 5 workflows
-- SLA adherence: 0.6
+Executive Decision
 
-## Safe Claim
+DO_NOT_RELEASE
 
-Built an enterprise process operations lab simulating supply-chain workflows, requirements traceability, readiness governance, process analytics, and change-management controls across ERP-style implementation lifecycles.
+Reason
+
+Controls compliance failed due to segregation-of-duties violations and failed audit events.
