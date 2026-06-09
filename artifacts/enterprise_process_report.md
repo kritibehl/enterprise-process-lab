@@ -1,6 +1,6 @@
 # Enterprise Process Report
 
-## Latest Project Output
+## Latest Output
 
 ```json
 {
@@ -11,14 +11,12 @@
   "sod_violations": 2,
   "failed_audit_events": 1
 }
-Integration Flow
+```
+
+## Integration Flow
 
 SAP Purchase Order → Oracle Finance → ServiceNow Change Ticket → Workday Approval
 
-Executive Decision
+## Executive Decision
 
-DO_NOT_RELEASE
-
-Reason
-
-Controls compliance failed due to segregation-of-duties violations and failed audit events.
+DO_NOT_RELEASE — controls compliance failed: segregation-of-duties violations and failed audit events.
