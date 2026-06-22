@@ -2,7 +2,7 @@
 
 **SAP Purchase Order → Oracle Finance → ServiceNow Change Ticket → Workday Approval**
 
-SAP-style workflows, ERP integrations, controls compliance, and implementation governance. Built to map enterprise application work across analyze, design, build, test, implement, and support phases.
+SAP-style workflows, ERP integrations, controls compliance and implementation governance. Built to map enterprise application work across analyze, design, build, test, implement, and support phases.
 
 `Python` · `ABAP Reporting` · `pytest` · `SQLite` · `GitHub Actions`
 
@@ -12,7 +12,7 @@ SAP-style workflows, ERP integrations, controls compliance, and implementation g
 
 ## Why This Exists
 
-**Problem:** Enterprise application implementations fail at integration boundaries — when SAP procurement data doesn't flow correctly into Oracle Finance, or when ServiceNow change tickets don't gate Workday approvals. Controls gaps and SoD violations aren't caught until go-live.
+**Problem:** Enterprise application implementations fail at integration boundaries — when SAP procurement data doesn't flow correctly into Oracle Finance or when ServiceNow change tickets don't gate Workday approvals. Controls gaps and SoD violations aren't caught until go-live.
 
 **Impact:** Failed ERP integrations delay go-live, create compliance exposure, and produce audit findings that block releases.
 
